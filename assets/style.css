@@ -43,12 +43,12 @@ body{
 
 #choices{
     width : 480px;
-    position: absolute;
+    position: absolute;B
     right : 0;
     top : 125px;
     padding : 10px
 }
-.choice{
+.choices{
     display: flow-root;
     width: 140px;
     background-color: rgb(116, 1, 116);
