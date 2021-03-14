@@ -34,10 +34,26 @@ var questions = [
       ];
 
 
-      var score = 0;
-      //question index array
-      var currentIndex = 0;
-      var secondsLeft = 100;
-      var timer = 0;
-      var penalty = 15;
+
+//question index array
+var timerCount = 100;
+var timer = 0;
+
+
+start.addEventListener("click", startQuiz);
+
+function startQuiz() {
+  if (timer === 0) {
+    timer = setInterval(function () {
+        timerCount--;
+      timerElement.textContent = timerCount;
+
+      if (timerCount <= 0) {
+        clearInterval(timer);
+        isDone();
+        timerElement.textContent = "Time's up!";
+      }
+    }, 1000);
+  }
+}
 
