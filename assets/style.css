@@ -1,75 +1,42 @@
-body{
-    font-size: 20px;
-    font-family: monospace;
-}
-
-#container{
-    margin-top: 10%; 
-    left: 25%;
-    height: 400px;
-    width : 800px;
-    position: relative;
-}
-.start{
-    font-size: 1.5em;
-    font-weight: bolder;
-    word-break: break-all;
-    width:200px;
-    height:40px;
-    cursor: pointer;
-    position: absolute;
-    text-align: center;
-    left:300px;
-    top:50px;
-    color : lightgrey;
-}
-.start:hover{
-    border: 3px solid  rgb(66, 3, 66);
-    color :  rgb(66, 3, 66);
-}
-
-#question{
-    width:500px;
-    height : 125px;
-    position: absolute;
-    right:0;
-    top:0;
-}
-#question p{
-    margin : 0;
-    padding : 15px;
-    font-size: 1.25em;
-}
-
-#choices{
-    width : 480px;
-    position: absolute;B
-    right : 0;
-    top : 125px;
-    padding : 10px
-}
-.choices{
-    display: flow-root;
-    width: 140px;
-    background-color: rgb(116, 1, 116);
-    color: seashell;
-    cursor: pointer;
-    padding : 5px;
-    margin: 5px;
-}
-.choice:hover{
-    border : 2px solid grey;
-    color: gray;
-    font-weight: bold;
-}
-
-.time-count{
-    margin-top: -10%;
-    position:absolute;
-    height : 100px;
-    width : 200px;
-}
-.timer-count{
-    color: grey;
-    font-size: 3em;
-}
+:root {
+    --purple: rgb(99, 4, 99);
+    
+    }
+    
+    #wrapper {
+        position: absolute;
+        left: 30%;
+        top: 20%;
+        width: 500px;
+        height: 500px;
+    }
+    #start {
+        margin: 10% 30%;
+        padding: 3px;
+        width: 6em;
+        font-size: 1.5em;
+        font-weight: bolder;
+        word-break: break-all;
+        cursor: pointer;
+        color : lightgrey;
+        text-align: center;
+    }
+    
+    #start:hover {
+        border: 3px solid  var(--purple);
+        color : var(--purple);
+    }
+    #choices {
+        font-size: 20px;
+        margin: 20px;
+        cursor: pointer;
+    }
+    
+    #timerElement {
+        position: fixed;
+        margin: 0 0 0 80%;
+        color: rgb(77, 74, 74);
+        font-size: 30px;
+    }
+    
+    
