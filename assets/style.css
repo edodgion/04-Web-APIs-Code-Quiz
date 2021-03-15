@@ -1,6 +1,5 @@
 :root {
     --purple: rgb(99, 4, 99);
-    
     }
     
     #wrapper {
@@ -34,9 +33,55 @@
     
     #timerElement {
         position: fixed;
-        margin: 0 0 0 80%;
+        margin: 5% 0 0 80%;
         color: rgb(77, 74, 74);
         font-size: 30px;
+    }
+    
+    #Enter {
+        background-color: var(--purple);
+        margin: 4px;
+        margin-top: 12px;
+        padding:2px;
+        width: 6rem;
+        font-size: 22px;
+        color: white;
+        display: inline;
+    
+    }
+    #Enter:hover{
+        background-color: rgb(148, 62, 148);
+        color: lightgray;
+    }
+    
+    
+    h1 {
+        text-align: center;
+    }
+    
+    li {
+        background-color: var(--purple);
+        border-radius: 3px;
+        margin-top: 5px;
+        padding: 10px 10px;
+        width: 30%;
+        font-size: 18px;
+        color: white;
+    }
+    li:hover{
+        background-color: rgb(148, 62, 148);
+        color: lightgray;
+    }
+    a{
+        color: var(--purple);
+    }
+    
+    #result {
+        font-size: 30px;
+        color: rgb(77, 74, 74);
+        margin-top: 20px;
+        border-top: 2px solid lightgray;
+        text-align: center;
     }
     
     
